@@ -109,19 +109,20 @@ ul {
     list-style: none;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
+    padding: 0px;
+    padding-left: 0px;
     text-align: center;
     background-color: #f1f1f1;
     margin: 0.5vw;
     width:32%;
   }
   
-  .fullclick a.main {
+  /* .fullclick a.main {
     color: #85baff;
     text-align: right;
     display: block;
     z-index: 1;
-  }
+  } */
   
   .fullclick li a.main::after {
     position: absolute;
@@ -130,6 +131,11 @@ ul {
     right: 0;
     bottom: 0;
     content: ' ';
+  }
+
+
+  .fullclick li a:hover{
+    opacity:40%;
   }
 
   /* A LOT OF THE CSS IS SOURCED FROM W3 SCHOOLS (thank you so much!) */
