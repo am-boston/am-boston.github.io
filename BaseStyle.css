@@ -1,3 +1,4 @@
+/* NAVBAR */
 ul {
     list-style-type: none;
     margin: 0;
@@ -27,6 +28,8 @@ ul {
   * {
     box-sizing: border-box;
   }
+
+  /* CARDS */
   
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -35,7 +38,7 @@ ul {
   /* Float four columns side by side */
   .column {
     float: left;
-    width: 25%;
+    width: 33%;
     padding: 0 10px;
   }
   
@@ -64,6 +67,69 @@ ul {
       display: block;
       margin-bottom: 20px;
     }
+  }
+
+/* GENERAL STYLES */
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+  }
+
+  .left {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float:left;
+  }
+
+  .right {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float:right;
+  }
+
+  .norm_margin {
+    margin-left:10vw;
+    margin-right:10vw;
+  }
+
+  .stretch {
+    position:absolute;
+    left:0;
+    right:0;
+  }
+
+  /* ATTEMPT AT CLICKABLE CARDS -- CSS */
+
+
+  .fullclick li {
+    list-style: none;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: 0.5vw;
+    width:32%;
+  }
+  
+  .fullclick a.main {
+    color: #85baff;
+    text-align: right;
+    display: block;
+    z-index: 1;
+  }
+  
+  .fullclick li a.main::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: ' ';
   }
 
   /* A LOT OF THE CSS IS SOURCED FROM W3 SCHOOLS (thank you so much!) */
