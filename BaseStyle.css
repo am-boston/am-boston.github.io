@@ -8,6 +8,7 @@ ul {
   }
   
   li {
+    margin-top:1vw;
     float: right;
   }
   
@@ -22,7 +23,9 @@ ul {
   /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #FFFFFF;
-    opacity: 40%;
+    /* opacity: 40%; */
+    border-radius: 15px;
+    border: 2px solid orange;
   }
 
 
@@ -155,6 +158,8 @@ ul {
     width:100vw;
     margin:0;
     border-top: 2px solid orange;
+    bottom: 0px;
+    margin-top:10%;
   }
 
   body {

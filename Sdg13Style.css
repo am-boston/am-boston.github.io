@@ -3,7 +3,7 @@
     background-color: #FFFFFF;
     /* opacity: 40%; */
     border-radius: 15px;
-    border: 2px solid purple;
+    border: 2px solid green;
   }
 
 
@@ -15,7 +15,7 @@
     padding: 0px;
     padding-left: 0px;
     text-align: center;
-    background-color: #f9f5fa;
+    background-color: #f2faf4;
     margin: 1vw;
     width:30%;
   }
@@ -43,16 +43,16 @@
 
   #rounded_corners {
     border-radius: 25px;
-    border: 2px solid purple;
+    border: 2px solid green;
   }
 
   .foot {
     text-align: center;
     padding: 3px;
-    background-color: #f9f5fa;
+    background-color: #f2faf4;
     color:black;
     width:100vw;
     margin:0;
-    border-top: 2px solid purple;
+    border-top: 2px solid green;
     bottom: 0px;
   }
