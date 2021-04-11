@@ -22,6 +22,7 @@ ul {
   /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #FFFFFF;
+    opacity: 40%;
   }
 
 
@@ -30,6 +31,11 @@ ul {
   }
 
   /* CARDS */
+
+  #rounded_corners {
+    border-radius: 25px;
+    border: 2px solid orange;
+  }
   
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -57,7 +63,7 @@ ul {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: #ffebc5;
   }
   
   /* Responsive columns - one column layout (vertical) on small screens */
@@ -106,15 +112,16 @@ ul {
 
 
   .fullclick li {
+    position:static;
     list-style: none;
     position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); this adds the "card" effect */
     padding: 0px;
     padding-left: 0px;
     text-align: center;
-    background-color: #f1f1f1;
-    margin: 0.5vw;
-    width:32%;
+    background-color: #fcf1e3;
+    margin: 1vw;
+    width:30%;
   }
   
   /* .fullclick a.main {
@@ -136,6 +143,23 @@ ul {
 
   .fullclick li a:hover{
     opacity:40%;
+  }
+
+  /* WHOLE BODY STYLES */
+
+  .foot {
+    text-align: center;
+    padding: 3px;
+    background-color: #fcf1e3;
+    color:black;
+    width:100vw;
+    margin:0;
+    border-top: 2px solid orange;
+  }
+
+  body {
+    padding:0;
+    margin:0;
   }
 
   /* A LOT OF THE CSS IS SOURCED FROM W3 SCHOOLS (thank you so much!) */

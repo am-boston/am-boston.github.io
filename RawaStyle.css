@@ -1,0 +1,50 @@
+.fullclick li {
+    position:static;
+    list-style: none;
+    position: relative;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); this adds the "card" effect */
+    padding: 0px;
+    padding-left: 0px;
+    text-align: center;
+    background-color: #f9f5fa;
+    margin: 1vw;
+    width:30%;
+  }
+  
+  /* .fullclick a.main {
+    color: #85baff;
+    text-align: right;
+    display: block;
+    z-index: 1;
+  } */
+  
+  .fullclick li a.main::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: ' ';
+  }
+
+
+  .fullclick li a:hover{
+    opacity:40%;
+  }
+
+  #rounded_corners {
+    border-radius: 25px;
+    border: 2px solid purple;
+  }
+
+  .foot {
+    text-align: center;
+    padding: 3px;
+    background-color: #f9f5fa;
+    color:black;
+    width:100vw;
+    margin:0;
+    border-top: 2px solid purple;
+    position: fixed;
+    bottom: 0px;
+  }
