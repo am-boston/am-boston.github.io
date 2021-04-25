@@ -67,6 +67,14 @@
     line-height: 1.6;
   }
 
+  @media only screen and (max-width: 600px) {
+    .fullclick li {
+      float: none;
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+
   .article_header {
     color:green
   }

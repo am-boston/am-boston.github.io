@@ -41,6 +41,14 @@
     opacity:40%;
   }
 
+  @media only screen and (max-width: 600px) {
+    .fullclick li {
+      float: none;
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+
   #rounded_corners {
     border-radius: 25px;
     border: 2px solid green;

@@ -148,6 +148,14 @@ ul {
     opacity:40%;
   }
 
+  @media only screen and (max-width: 600px) {
+    .fullclick li {
+      float: none;
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+
   /* WHOLE BODY STYLES */
 
   .foot {
