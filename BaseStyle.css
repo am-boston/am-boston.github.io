@@ -180,4 +180,20 @@ ul {
     margin:0;
   }
 
+  h1 {
+    text-align: center; 
+    margin-bottom: 10vh; 
+    margin-top: 10vh; 
+    font-size:300%;
+  }
+
+  ::selection {
+    background: orange; /* WebKit/Blink Browsers */
+    color: white;
+  }
+  ::-moz-selection {
+    background: orange;
+    color: white; /*  */
+  }
+
   /* A LOT OF THE CSS IS SOURCED FROM W3 SCHOOLS (thank you so much!) */

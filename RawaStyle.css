@@ -64,3 +64,12 @@
     border-top: 2px solid purple;
     bottom: 0px;
   }
+
+  ::selection {
+    background: purple; /* WebKit/Blink Browsers */
+    color: white;
+  }
+  ::-moz-selection {
+    background: purple;
+    color: white; /*  */
+  }

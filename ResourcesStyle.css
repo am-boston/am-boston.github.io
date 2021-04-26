@@ -64,3 +64,12 @@
     border-top: 2px solid brown;
     bottom: 0px;
   }
+
+  ::selection {
+    background: brown; /* WebKit/Blink Browsers */
+    color: white;
+  }
+  ::-moz-selection {
+    background: brown;
+    color: white; /*  */
+  }
