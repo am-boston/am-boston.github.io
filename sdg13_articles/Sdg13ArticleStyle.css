@@ -67,14 +67,20 @@
     line-height: 1.6;
   }
 
-  @media only screen and (max-width: 600px) {
-    .article_text {
-      font-size:medium;
-    }
-  }
+  
 
   .article_header {
     color:green
   }
 
   .article_h3{color:lightslategray}
+
+  .image {
+    width:100%
+  }
+
+  @media only screen and (max-width: 600px) {
+    .image {
+      width:100%;
+    }
+  }

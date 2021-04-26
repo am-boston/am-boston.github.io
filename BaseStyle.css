@@ -26,6 +26,7 @@ ul {
     /* opacity: 40%; */
     border-radius: 15px;
     border: 2px solid orange;
+    padding: 14px 16px;
   }
 
 
@@ -37,13 +38,10 @@ ul {
 
   #rounded_corners {
     border-radius: 25px;
-    border: 2px solid orange;
+    border: 3px solid orange;
   }
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
+ 
   /* Float four columns side by side */
   .column {
     float: left;
@@ -93,6 +91,14 @@ ul {
     float:left;
   }
 
+  .text-left {
+    text-align:left;
+  }
+
+  .text-center {
+    text-align:center;
+  }
+
   .right {
     display: block;
     margin-left: auto;
@@ -111,6 +117,7 @@ ul {
     right:0;
   }
 
+
   /* ATTEMPT AT CLICKABLE CARDS -- CSS */
 
 
@@ -118,21 +125,19 @@ ul {
     position:static;
     list-style: none;
     position: relative;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); this adds the "card" effect */
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 0px;
     padding-left: 0px;
     text-align: center;
-    background-color: #fcf1e3;
+    /* background-color: #fcf1e3; */
     margin: 1vw;
     width:30%;
+    overflow: hidden;
   }
   
-  /* .fullclick a.main {
-    color: #85baff;
-    text-align: right;
-    display: block;
-    z-index: 1;
-  } */
+  .fullclick a.main {
+    margin:1vw;
+  }
   
   .fullclick li a.main::after {
     position: absolute;
@@ -143,16 +148,27 @@ ul {
     content: ' ';
   }
 
+  .fullclick a{
+    border-radius: 25px;
+    border: 2px solid white;
+    overflow: hidden;
+    /* background-color: #fcf1e3; */
+    padding: 14px 16px;
+  }
 
   .fullclick li a:hover{
     opacity:40%;
     transition: opacity 0.6s ease;
     border-radius: 25px;
     border: 2px solid white;
+    overflow: hidden;
+    background-color: #fcf1e3;
+    padding: 14px 16px;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   }
 
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
       .fullclick li {
         float: none;
         width: 90%;
@@ -160,6 +176,75 @@ ul {
       }
     }
 
+  
+  .card_img {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top:-20px;
+    object-fit:fill;
+    overflow: hidden;
+
+    width: 150%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  
+  /* ATTEMPT AT MAKING TAGS */
+  .tags {
+    list-style: none;
+    margin: 1vw;
+    overflow: hidden; 
+    padding: 0;
+  }
+  
+  .tags li {
+    float: left; 
+  }
+  
+  .tag {
+    padding: 3px 15px 3px 15px;
+    text-decoration: none;
+    
+    margin: 0px 0px 7px 7px;
+    opacity: 70%;
+    border-radius: 10px;
+    background-color: #fcf1e3;
+    background-color: orange;
+    color:white;
+    
+  }
+  
+  .tag::before {
+    border-radius: 15px;
+    background-color: #fcf1e3;
+    
+  }
+  
+  .tag::after {
+    border-radius: 15px;
+    background-color: #fcf1e3;
+    opacity: 100%;
+  }
+  
+  .tag:hover {
+
+    background-color: #FFFFFF;
+    opacity: 100%;
+    border-radius: 15px;
+    border-radius: 15px;
+    background-color: #fcf1e3;
+  }
+
+  .noEvent{
+    pointer-events: none;
+}
+  
+
+
+  /* USED FROM: https://codepen.io/wbeeftink/pen/dIaDH */
 
   /* WHOLE BODY STYLES */
 
@@ -178,6 +263,8 @@ ul {
   body {
     padding:0;
     margin:0;
+    font-family: Mulish, Arial, Helvetica, sans-serif;
+    
   }
 
   h1 {
@@ -185,6 +272,19 @@ ul {
     margin-bottom: 10vh; 
     margin-top: 10vh; 
     font-size:300%;
+    font-family: Mulish, "Nanum Gothic", Arial;
+  }
+
+  
+  h2 {
+    font-size:125%;
+    font-weight:bold;
+    font-family: Mulish, "Nanum Gothic", Arial;
+  }
+
+  p{
+    font-size:95%;
+    font-family: Mulish, "Nanum Gothic", Arial;
   }
 
   ::selection {

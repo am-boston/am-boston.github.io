@@ -8,46 +8,121 @@
 
 
 .fullclick li {
-    position:static;
-    list-style: none;
-    position: relative;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); this adds the "card" effect */
-    padding: 0px;
-    padding-left: 0px;
-    text-align: center;
-    background-color: #fff9f2;
-    margin: 1vw;
-    width:30%;
-  }
-  
-  /* .fullclick a.main {
-    color: #85baff;
-    text-align: right;
-    display: block;
-    z-index: 1;
-  } */
-  
-  .fullclick li a.main::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: ' ';
-  }
+  position:static;
+  list-style: none;
+  position: relative;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 0px;
+  padding-left: 0px;
+  text-align: center;
+  /* background-color: #fcf1e3; */
+  margin: 1vw;
+  width:30%;
+  overflow: hidden;
+}
+
+.fullclick a.main {
+  margin:1vw;
+}
+
+.fullclick li a.main::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+}
+
+.fullclick a{
+  border-radius: 25px;
+  border: 2px solid white;
+  overflow: hidden;
+  /* background-color: #fcf1e3; */
+  padding: 14px 16px;
+}
+
+.fullclick li a:hover{
+  opacity:40%;
+  transition: opacity 0.6s ease;
+  border-radius: 25px;
+  border: 2px solid white;
+  overflow: hidden;
+  background-color: #fff9f2;
+  padding: 14px 16px;
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+}
 
 
-  .fullclick li a:hover{
-    opacity:40%;
-  }
-
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     .fullclick li {
       float: none;
       width: 90%;
       margin-bottom: 20px;
     }
   }
+
+
+.card_img {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top:-20px;
+  object-fit:fill;
+  overflow: hidden;
+
+  width: 150%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* ATTEMPT AT MAKING TAGS */
+.tags {
+  list-style: none;
+  margin: 1vw;
+  overflow: hidden; 
+  padding: 0;
+}
+
+.tags li {
+  float: left; 
+}
+
+.tag {
+  padding: 3px 15px 3px 15px;
+  text-decoration: none;
+  
+  margin: 0px 0px 7px 7px;
+  opacity: 70%;
+  border-radius: 10px;
+  background-color: #fff9f2;
+  background-color: brown;
+  color:white;
+  
+}
+
+.tag::before {
+  border-radius: 15px;
+  background-color: #fff9f2;
+  
+}
+
+.tag::after {
+  border-radius: 15px;
+  background-color: #fff9f2;
+  opacity: 100%;
+}
+
+.tag:hover {
+
+  background-color: #FFFFFF;
+  opacity: 100%;
+  border-radius: 15px;
+  border-radius: 15px;
+  background-color: #fff9f2;
+}
 
   #rounded_corners {
     border-radius: 25px;
