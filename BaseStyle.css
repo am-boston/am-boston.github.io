@@ -25,7 +25,7 @@ ul {
     background-color: #FFFFFF;
     /* opacity: 40%; */
     border-radius: 15px;
-    border: 2px solid darkorange;
+    border: 2px solid orangered;
     padding: 14px 16px;
   }
 
@@ -38,7 +38,7 @@ ul {
 
   #rounded_corners {
     border-radius: 25px;
-    border: 3px solid darkorange;
+    border: 3px solid orangered;
   }
   
  
@@ -212,7 +212,7 @@ ul {
     opacity: 70%;
     border-radius: 10px;
     background-color: #fcf1e3;
-    background-color: darkorange;
+    background-color: orangered;
     color:white;
     
   }
@@ -255,7 +255,7 @@ ul {
     color:black;
     width:100vw;
     margin:0;
-    border-top: 2px solid darkorange;
+    border-top: 2px solid orangered;
     bottom: 0px;
     margin-top:10%;
   }
@@ -264,7 +264,6 @@ ul {
     padding:0;
     margin:0;
     font-family: Mulish, Arial, Helvetica, sans-serif;
-    overflow: hidden;
     
   }
 
@@ -292,11 +291,11 @@ ul {
   }
 
   ::selection {
-    background: darkorange; /* WebKit/Blink Browsers */
+    background: orangered; /* WebKit/Blink Browsers */
     color: white;
   }
   ::-moz-selection {
-    background: darkorange;
+    background: orangered;
     color: white; /*  */
   }
 
