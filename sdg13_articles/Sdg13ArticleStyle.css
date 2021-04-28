@@ -67,20 +67,61 @@
     line-height: 1.6;
   }
 
+    /* ARTICLE IMAGE STYLES */
+
+  .card_img {
+    object-fit:fill;
+    overflow: hidden;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   
 
   .article_header {
-    color:green
+    color:black;
+    margin-left:20%;
+    margin-right:20%;
   }
 
-  .article_h3{color:lightslategray}
+  .article_h3{
+    color:grey;
+    margin-left:20%;
+    margin-right:20%;
+  }
 
   .image {
-    width:100%
+    width: 50%;
+    height: auto;
+    background-size: cover;
   }
 
   @media only screen and (max-width: 600px) {
     .image {
       width:100%;
+    }
+
+    .article_h3{
+      color:grey;
+      margin-left:5%;
+      margin-right:5%;
+      overflow:hidden;
+    }
+
+    .article_header {
+      color:black;
+      margin-left:5%;
+      margin-right:5%;
+      overflow:hidden;
+    }
+
+    .article_text {
+      margin-left:10%;
+      margin-right:10%;
+      font-size:large;
+      line-height: 1.6;
+      overflow:hidden;
     }
   }

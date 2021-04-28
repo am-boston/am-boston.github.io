@@ -81,7 +81,7 @@ li a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:50%;
+  /* width:50%; */
 }
 
 .left {
@@ -285,6 +285,7 @@ h2 {
 p{
   font-size:95%;
   font-family: Mulish, "Nanum Gothic", Arial;
+  line-height: 1.5em; /* THIS SEEMS NOT TO HAVE ANY EFFECT */
 }
 
 ::selection {
